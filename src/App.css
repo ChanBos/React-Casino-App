@@ -1,38 +1,248 @@
+/* Set the text alignment and colour, the background colour and the margins of the page. */
+html,
 .App {
+  margin: auto;
+  background-color: #000000;
+  color: #ffffff;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
+/* Set the minimum height, the background colour, the alignment and justification of items to center and set the font size and colour. Also set
+for the header to display as flex and set the flex direction to column. */
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  min-height: 50vh;
+  background-color: #000000;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #ffffff;
 }
 
-.App-link {
-  color: #61dafb;
+/* --- Image Headers --- */
+/* Set the bottom margin of the landing header. */
+#casino {
+  margin-bottom: 20px !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Set the bottom margin of the currency converter header. */
+#cash {
+  margin-bottom: 15px !important;
+}
+
+/* --- Dropdown Menu --- */
+/* Set the size (height x width), the margins, the padding and the background and border colour. */
+#dropdown-basic {
+  height: 40px;
+  width: 40px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 0%;
+  background-color: #000000;
+  border-color: #000000;
+}
+
+/* Overrided for the box shadow to not display once the "hamburger" menu is clicked on. */
+#dropdown-basic:focus {
+  box-shadow: none;
+}
+
+/* Overrided for the caret to not display once the "hamburger" menu. */
+#dropdown-basic::after {
+  display: none;
+}
+
+/* Overrided for the dropdown items' font colour to be white. */
+.dropdown-item {
+  color: #ffffff !important;
+}
+
+/* Overrided for the dropdown items' font colour to be purple and for the font weight to change to bold once the dropdown item is hovered 
+over. */
+.dropdown-item:hover {
+  color: #800080 !important;
+  font-weight: bold;
+}
+
+/* Overrided for the dropdown items' font colour to be white, for the background colour to change to purple and for the font weight to change to 
+bold once the dropdown item is clicked on/ active. */
+.dropdown-item:active {
+  background-color: #800080 !important;
+  font-weight: bold;
+  color: #ffffff !important;
+}
+
+/* Overrided the dropdown menu's margins, background colour, border (styled, sized and coloured) and font colour. */
+.dropdown-menu {
+  margin-left: -72px !important;
+  margin-right: auto !important;
+  background: #000000 !important;
+  border: 1px solid #800080 !important;
+  color: #ffffff !important;
+}
+
+/* --- Buttons --- */
+/* Set the button's/ icon's padding, the background colour, the font size and colour and for no border to be shown. */
+.quit-button,
+button,
+.fa-bars {
+  padding: 0%;
+  background-color: #000000;
+  font-size: 25px;
+  color: #ffffff;
+  border: none;
+}
+
+/* Set the padding, the font size and added a border (styled, sized, coloured and radius property) to the "Currency Converter", the "Quit Game"
+button and the "Restart" button. */
+.quit-button,
+.restart-button,
+#currencybutton {
+  margin-bottom: 20px;
+  padding: 5px 10px;
+  font-size: 1rem;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+}
+
+/* Set for the cursor and the font colour to change once the "hamburger" menu icon is hovered over. */
+.fa-bars:hover {
+  cursor: pointer;
+  color: #800080;
+}
+
+/* Set for the padding , the background colour, the font weight and colour, the border (styled, sized and coloured) and the cursor to change
+once the "Currency Converter" and "Restart "button is hovered over. */
+.quit-button:hover,
+.restart-button:hover,
+#currencybutton:hover {
+  padding: 5px 10px;
+  background-color: #800080;
+  font-weight: bold;
+  color: #ffffff;
+  border: 1px solid #ffffff80;
+  cursor: pointer;
+}
+
+/* Set the quit button's padding, the left margin and the text decoration to none. */
+.quit-button {
+  padding: 6.5px !important;
+  margin-left: 10px !important;
+  text-decoration: none !important;
+}
+
+/* --- Text --- */
+/* Set the bottom margin of the headers. */
+h1 {
+  margin-bottom: 20px;
+}
+
+/* Set the bottom margin, the padding and for the text to be aligned to the center. */
+p {
+  margin-bottom: 1px;
+  padding: 0 15%;
+  text-align: center !important;
+}
+
+/* --- Currency Converter --- */
+/* Set the margins and added a top border (styled, sized and coloured) to the currency converter's form. */
+.Form {
+  margin: 30px auto;
+  border-top: 1px solid #ffffff;
+}
+
+/* Set the margins, the padding and added a border (styled, sized, coloured and radius property set) of the currency converter's input and 
+select elements. */
+#currencyinput,
+select {
+  margin: 20px 10px !important;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ffffff80;
+}
+
+/* Set the padding, the background colour, the border radius and the font size and colour of the currency converter's and the "WinEnd"
+component's output section. */
+.centered,
+#converteroutput {
+  width: 800px !important;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  background-color: #c5c5c5;
+  border-radius: 10px;
+  font-size: 30px;
+  color: #000000;
+}
+
+/* --- Win ---*/
+/* Set the width, margins, justified the content to have a space around and set for the board to display as flex and for the items to wrap. */
+.win-board {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 40px auto;
+  justify-content: space-around;
+}
+
+/* Set the cards' position to be relative, set the size (height x width), the padding, the margins and set the transform style to maintain the
+children's 3D positions. */
+.win-board .card {
+  position: relative;
+  height: 407px;
+  width: 292px;
+  padding: 10px;
+  margin: 16px;
+  transform-style: preserve-3d;
+}
+
+/* Set the size (height x width), the back-face visibility to hidden, the border radius and for the position to be absolute and to be aligned
+at the top-left corners. This is so that the cards display over one another. */
+.win-board .card div {
+  height: 407px;
+  width: 292px;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
+}
+
+/* Set the size (height x width), the alignment and justification of items to center, for it to display as flex and for the mouse to change to a 
+pointer. */
+.win-board .card .back {
+  display: flex;
+  height: 405px;
+  width: 290px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Set transform to rotate the front of the cards around the vertical axis at a 180 degrees and show the back of the cards. */
+.win-board .card .front {
+  transform: rotateY(180deg);
+}
+
+/* Set the size (height x width) of the front card's container. */
+#frontcard {
+  height: 407px !important;
+  width: 292px !important;
+}
+
+/* Set transform to rotate the front of the cards around the vertical axis at a 180 degrees and show the front of the cards once clicked on to
+flip and set a transition duration of 2 seconds. */
+.flipped {
+  transform: rotateY(180deg);
+  transition-duration: 2s !important;
+}
+
+/* Set the size (height x width), the top margin and the text alignment of the "WinEnd" component's section. */
+.centered {
+  width: 100%;
+  height: 100%;
+  margin-top: 40px !important;
+  text-align: center;
 }
