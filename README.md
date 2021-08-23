@@ -5,7 +5,7 @@
 
 > Casino application built with React.js, featuring a currency converter and a simple card flip game.
 
-![Weather App](https://github.com/ChanBos/React-Weather-App/blob/master/public/images/Weather-Bot.png)
+![Casino App](https://github.com/ChanBos/React-Casino-App/blob/master/public/images/Casino%20App.png)
 
 ### ✨ [Link to the application]()
 
