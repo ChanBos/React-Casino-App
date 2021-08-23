@@ -7,7 +7,7 @@
 
 ![Casino App](https://github.com/ChanBos/React-Casino-App/blob/master/public/images/Casino%20App.png)
 
-### ✨ [Link to the application]()
+### ✨ [Link to the application](http://harsh-eggnog.surge.sh/)
 
 ## Table of Contents:
 
